@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
         .then(function() {
             // Inserts seed entries
             return knex("lock_log").insert([
-              { id: 1, lock_id: 1, status: "locked", status_changed: "2018-09-20T00:00:29.080Z", location: "0, 0"}
+                { id: 1, lock_id: 1, status: "locked", status_changed: "2018-09-20T00:00:29.080Z", location: "0, 0"}
             ]);
         })
         .then(() => {
